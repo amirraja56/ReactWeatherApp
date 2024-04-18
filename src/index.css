@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.mainBody{
+  background-color:aliceblue;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.centerBody{
+  background-color: rgb(201, 219, 220);
+  width: 80vh;
+  height: 90vh;
+  border-radius: 20px;
+}
+.head{
+  font-family:cursive;
+   font-size: 50px;     
+}
+.info{
+  font-size: 80px;
+  font-family:'Times New Roman', Times, serif;
+  padding-top: 50px;
+  text-transform: capitalize;
+}
