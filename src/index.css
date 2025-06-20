@@ -1,28 +1,87 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-.mainBody{
-  background-color:aliceblue;
-  width: 100vw;
-  height: 100vh;
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainBody {
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   text-align: center;
-  display: grid;
-  place-items: center;
 }
-.centerBody{
+
+.centerBody {
   background-color: rgb(201, 219, 220);
-  width: 80vh;
-  height: 90vh;
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+  min-height: 700px;
+  padding: 30px 20px;
   border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.head{
-  font-family:cursive;
-   font-size: 50px;     
+
+.head {
+  font-family: cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
-.info{
-  font-size: 80px;
-  font-family:'Times New Roman', Times, serif;
-  padding-top: 50px;
+
+.info {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
   text-transform: capitalize;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info img {
+  width: 100px;
+  height: 100px;
+}
+
+.error {
+  margin: 1rem 1rem;
+}
+
+.temp_minmax {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Responsive - Tablets and up */
+@media (min-width: 768px) {
+  .input-group {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .input-group button {
+    margin-top: 0;
+  }
+
+  .info {
+    font-size: 2rem;
+  }
+
+  .temp_minmax {
+    font-size: 1.2rem;
+  }
 }
